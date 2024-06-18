@@ -1,6 +1,14 @@
 # Cinema Ticket Booking App
 
 This repository contains the Customer microservice of the Cinema Ticket Booking Application. The application is built using React JS, Spring Boot, JPA, Spring Security, Confluent Kafka, Protobuf, gRPC, and MySQL. It supports functionalities such as registration with email verification, password reset via email, login, movie search with pagination, viewing movie details, seat booking, ticket downloading, and email notifications.
+### Registration Page
+![Registration Page](https://drive.google.com/file/d/10j7CUOlEzT8vwmsxjmv09rTp9lUkNYOZ/view?usp=drive_link)
+
+### Movie Search
+![Movie Search](https://drive.google.com/file/d/12EhhzTvHYpZVaXqKbfjztFP69eqD2I0T/view?usp=drive_link)
+
+### Seat Booking
+![Seat Booking](https://drive.google.com/file/d/1t0O2Yg_qggAneFjuHrrrpgqqLXsBRUOo/view?usp=drive_link)
 
 ## Table of Contents
 
