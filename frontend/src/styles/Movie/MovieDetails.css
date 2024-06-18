@@ -1,0 +1,100 @@
+.movie-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+.movie-details-card {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-details-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.movie-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.movie-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.movie-meta .ant-card-meta-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.movie-meta .ant-card-meta-description {
+    font-size: 24px;
+    color: #666;
+}
+
+.movie-description p {
+    font-size: 20px;
+    color: #444;
+    margin: 10px 0;
+}
+
+.movie-duration p, .movie-release-date p {
+    font-size: 20px;
+    color: #444;
+    margin: 5px 0;
+}
+
+.movie-crew h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.movie-crew ul {
+    padding-left: 20px;
+}
+
+.movie-crew li {
+    font-size: 20px;
+    color: #555;
+}
+
+.booking-button {
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #53a3a4;
+    border-color: #53a3a4;
+    height: 40px;
+    width: 150px;
+}
+
+
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .movie-details-content {
+        flex-direction: row;
+    }
+
+    .movie-image {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .movie-info {
+        flex: 2;
+    }
+}

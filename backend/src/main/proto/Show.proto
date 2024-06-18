@@ -1,0 +1,26 @@
+//syntax = "proto3";
+//
+//package com.example.backend.proto;
+//option java_outer_classname = "ShowProtos";
+//
+//message Show{
+//  int64 showID = 1;
+//  string movieID = 2;
+//  string showDate = 3;
+//  string showTime = 4;
+//  int64 seatPrice = 5;
+//  string cinemaUserName = 6;
+//}
+syntax = "proto3";
+
+package com.example.backend.proto;
+option java_outer_classname = "ShowProtos";
+
+message Show{
+  int64 showId = 1;
+  int64 movieId = 2;
+  string showDate = 3;
+  string showTime = 4;
+  int64 seatPrice = 5;
+  int64 cinemaUserId = 6;
+}

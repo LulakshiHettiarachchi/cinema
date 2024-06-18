@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.example.backend.proto;
+option java_outer_classname = "MovieProtos";
+
+
+message Movie{
+  int64 id = 1;
+  string name = 2;
+  string releaseDate = 3;
+  string description = 4;
+  int64 hours = 5;
+  int64 minutes = 6;
+  string language = 7;
+  bytes imageData = 8;
+}

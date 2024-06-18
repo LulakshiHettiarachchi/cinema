@@ -1,0 +1,18 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.top-movie-bar{
+    background-image: linear-gradient(to right, #060635, #68bfcf);
+    height: 30vw;
+
+
+}
+
+.all-movie-bar{
+
+    min-height: 500px;
+
+}

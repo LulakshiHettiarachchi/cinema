@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.example.backend.proto;
+option java_outer_classname = "CinemaProtos";
+
+
+message Cinema{
+  int64 cinemaId = 1;
+  string cinemaUserName = 2;
+
+}

@@ -1,0 +1,79 @@
+.showtimes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+.showtime-card {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.showtime-title{
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.showtime-title h1{
+    font-size: 30px;
+    color: #3e3e9c;
+}
+.date-picker{
+    color: #6868b5;
+    font-weight: bold;
+    border-color: #3e3e9c;
+    border-width:2px;
+}
+.showtime-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.showtime-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.showtimes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.showtime {
+    font-size: 18px;
+    color: #555;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.showtime:hover {
+    background-color: #d0d0d0;
+}
+
+@media (max-width: 600px) {
+    .showtime-info {
+        flex-direction: column;
+    }
+
+    .showtimes {
+        justify-content: center;
+    }
+}

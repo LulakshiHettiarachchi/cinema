@@ -1,0 +1,57 @@
+.all-movie-main-container {
+    padding: 20px;
+}
+
+.all-movie-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.all-movie-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.custom-col {
+    flex: 0 0 20%; /* 20% of the row, since 5 columns in a row */
+    max-width: 20%;
+}
+
+.movie-card {
+    margin: 0 auto;
+}
+.movie-card:hover{
+transform: translateY(2px);
+    box-shadow: 2px 2px #68bfcf;
+
+}
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* Custom pagination button styles */
+.ant-pagination-item a {
+    color: #68bfcf; /* Default text color */
+}
+
+.ant-pagination-item-active a {
+    border-color: #68bfcf; /* Border color when active */
+}
+
+.ant-pagination-item-active {
+    border-color: #68bfcf; /* Border color when active */
+    background-color: #68bfcf; /* Background color when active */
+}
+
+.ant-pagination-item:hover a {
+    color: #68bfcf; /* Text color on hover */
+}
+
+.ant-pagination-item:hover {
+    border-color: #68bfcf; /* Border color on hover */
+}

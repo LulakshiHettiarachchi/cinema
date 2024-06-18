@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.server.proto";
+
+service BookingService {
+  rpc getBookedSeats(NewBookingRequest) returns (NewBookingResponse) {};
+  rpc createBooking(SelectedBookingRequest) returns (SelectedBookingResponse) {};
+  rpc proceedConfirmation(confirmationBookingRequest) returns (confirmationBookingResponse) {};
+  rpc emailConfirmation(SelectedPaymentRequest) returns (emailResponse) {};
+}
+
+message NewBookingRequest {
+  int64 showId = 1;
+}
+
+message NewBookingResponse {
+  int64 showId = 1;
+  repeated string seatNumbers = 2;
+}
+
+message SelectedBookingRequest {
+  int64 showId = 1;
+  repeated string seatNumbers = 2;
+  int64 customerId = 3;
+}
+message SelectedBookingResponse{
+  //  true or false
+  string isBookingCreated = 1;
+}
+message confirmationBookingRequest{
+  //  true or false
+
+  bool isBookingConfirmed = 1;
+  repeated string seatNumbers = 2;
+  int64 showId = 3;
+  int64 customerId = 4;
+}
+
+message confirmationBookingResponse{
+  //  true or false
+  bool isBookingConfirmedByCinema = 1;
+}
+message timeOutResponse{
+  //  true or false
+
+  bool isBookingConfirmedByCinema = 1;
+}
+message SelectedPaymentRequest {
+  //  true or false
+  int64 showId = 1;
+  string customerId = 2;
+  //  true or false
+  bool isPaymentSuccess = 3;
+  string email = 4;
+}
+message emailResponse {
+  string showTime = 1;
+  string showDate = 2;
+  string movieName = 3;
+  repeated string seatNumbers = 4;
+  int64 totalPrice = 5;
+}
+
+
+

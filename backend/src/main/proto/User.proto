@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.example.backend.proto;
+
+option java_package = "com.example.backend.proto";
+option java_outer_classname = "UserProtos";
+
+message User {
+  int64 id = 1;
+  string name = 2;
+  string email = 3;
+}

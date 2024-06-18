@@ -1,0 +1,90 @@
+.profile-container {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 35vw;
+
+}
+
+.profile-card {
+
+    top: 25vh;
+    transform: translateY(-50%);
+    width: 25vw;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: white;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email, .phone , .name{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #4b4b50;
+
+}
+
+.icon {
+    margin-right: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.phone-not-set {
+    color: #ccc; /* Light gray color */
+}
+
+.save-cancle-btn {
+    margin: 5px;
+}
+
+.ant-message {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+.error-msg{
+    color: red;
+    margin-left: 5px;
+    font-size: 15px;
+}
+@media (max-width: 1350px) {
+    .profile-card{
+        width: 35vw;
+        min-height: 22vh;
+    }
+    .profile-container{
+    width: 50vw;
+}
+}
+@media (max-width: 850px) {
+    .profile-main-container {
+        flex-direction: column;
+    }
+    .profile-main-container-card{
+        justify-content: center;
+    }
+    .profile-card{
+        top:12vh;
+        width: 50vw;
+
+    }
+}
+@media (max-width: 600px) {
+
+    .profile-card{
+        width: 85vw;
+
+    }
+}

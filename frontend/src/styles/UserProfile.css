@@ -1,0 +1,16 @@
+.profile-main-container{
+    min-height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(135deg, #2a0845 0%, #6441a5 50%, #a4508b 100%);
+    background-size: cover;
+    /*background-color: #3e3e9c;*/
+}
+.profile-main-container-card{
+
+    display:flex;
+    alignItems:flex-start;
+
+}

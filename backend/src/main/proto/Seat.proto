@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.example.backend.proto;
+option java_outer_classname = "SeatProtos";
+
+message Seat{
+  int64 sectionId = 1;
+  int32 columns = 2;
+  int32 numRows = 3;
+  int32 startColumnNumber = 4;
+  int32 endColumnNumber = 5;
+  string startRowNumber = 6;
+  string endRowNumber = 7;
+  int64 id = 8;
+
+}

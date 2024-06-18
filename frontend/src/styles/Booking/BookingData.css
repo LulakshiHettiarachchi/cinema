@@ -1,0 +1,85 @@
+.booking-details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.disclaimer, .booking-summary {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.ant-card-title {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+ol {
+    padding-left: 20px;
+    color: #666;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.booking-summary-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.booking-summary-content p {
+    width: 48%;
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.booking-summary-content p strong {
+    color: #666;
+}
+
+.booking-checkbox {
+    margin: 20px 0;
+}
+
+.proceed-button {
+    display: block;
+    margin-left: auto;
+    background-color: #53a3a4;
+    border-color: #53a3a4;
+    color: white;
+    font-size: 15px;
+    /*padding: 10px 20px;*/
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .booking-details-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .ant-card-title {
+        font-size: 1.2em;
+    }
+
+    .booking-summary-content p {
+        width: 100%;
+        font-size: 1em;
+    }
+}
